@@ -741,11 +741,15 @@ LETTER landscape</description>
 <text x="-2.54" y="185.42" size="3.81" layer="88" align="top-right">add battery/charger connector
 add INA260
 add JST-4 for console
+add galvanic isolator
 add 1x6 for FTDI?
 add RJ-45 magjack
 add ENC28J60 eth IC package SS
 add power LED
-add OKI 78SR 5V SMPS</text>
+add OKI 78SR 5V SMPS
+add external temp connector
+add Si7006 internal temp/humidity
+add power, status lights</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
