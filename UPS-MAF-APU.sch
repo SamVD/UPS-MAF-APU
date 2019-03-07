@@ -1913,6 +1913,79 @@ From SnapEDA</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ECS-250-20-3X-EN-TR">
+<description>&lt;CRYSTAL 25.0000MHZ 20PF SMD&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="ECS250203XENTR">
+<description>&lt;b&gt;ECS-250-20-3X-EN-TR-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-2.75" y="0" dx="3.5" dy="1.2" layer="1"/>
+<smd name="2" x="2.75" y="0" dx="3.5" dy="1.2" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.5" y1="2.05" x2="3.5" y2="2.05" width="0.2" layer="51"/>
+<wire x1="3.5" y1="2.05" x2="3.5" y2="-2.05" width="0.2" layer="51"/>
+<wire x1="3.5" y1="-2.05" x2="-3.5" y2="-2.05" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="-2.05" x2="-3.5" y2="2.05" width="0.2" layer="51"/>
+<wire x1="-5" y1="2.55" x2="5" y2="2.55" width="0.1" layer="51"/>
+<wire x1="5" y1="2.55" x2="5" y2="-2.55" width="0.1" layer="51"/>
+<wire x1="5" y1="-2.55" x2="-5" y2="-2.55" width="0.1" layer="51"/>
+<wire x1="-5" y1="-2.55" x2="-5" y2="2.55" width="0.1" layer="51"/>
+<wire x1="-3.5" y1="1" x2="-3.5" y2="2.05" width="0.1" layer="21"/>
+<wire x1="-3.5" y1="2.05" x2="3.5" y2="2.05" width="0.1" layer="21"/>
+<wire x1="3.5" y1="2.05" x2="3.5" y2="1" width="0.1" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="-2.05" width="0.1" layer="21"/>
+<wire x1="-3.5" y1="-2.05" x2="3.5" y2="-2.05" width="0.1" layer="21"/>
+<wire x1="3.5" y1="-2.05" x2="3.5" y2="-1" width="0.1" layer="21"/>
+<wire x1="-4.7" y1="-0.1" x2="-4.7" y2="-0.1" width="0.1" layer="21"/>
+<wire x1="-4.7" y1="-0.1" x2="-4.8" y2="-0.1" width="0.1" layer="21" curve="180"/>
+<wire x1="-4.8" y1="-0.1" x2="-4.8" y2="-0.1" width="0.1" layer="21"/>
+<wire x1="-4.8" y1="-0.1" x2="-4.7" y2="-0.1" width="0.1" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ECS-250-20-3X-EN-TR">
+<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="IN/OUT" x="0" y="0" length="middle"/>
+<pin name="OUT/IN" x="33.02" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECS-250-20-3X-EN-TR" prefix="Y">
+<description>&lt;b&gt;CRYSTAL 25.0000MHZ 20PF SMD&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ecsxtal.com/store/pdf/CSM-3X.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ECS-250-20-3X-EN-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECS250203XENTR">
+<connects>
+<connect gate="G$1" pin="IN/OUT" pad="1"/>
+<connect gate="G$1" pin="OUT/IN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="CRYSTAL 25.0000MHZ 20PF SMD" constant="no"/>
+<attribute name="HEIGHT" value="2.3mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ECS Inc." constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECS-250-20-3X-EN-TR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1953,6 +2026,16 @@ From SnapEDA</description>
 <part name="SYMBOL13" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="3.3V" device=""/>
 <part name="SYMBOL14" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
 <part name="SYMBOL15" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="Y1" library="ECS-250-20-3X-EN-TR" deviceset="ECS-250-20-3X-EN-TR" device=""/>
+<part name="SYMBOL16" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="3.3V" device=""/>
+<part name="SYMBOL17" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="3.3V" device=""/>
+<part name="SYMBOL18" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="SYMBOL19" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="SYMBOL20" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="SYMBOL21" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="SYMBOL22" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="GND" device=""/>
+<part name="SYMBOL23" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="3.3V" device=""/>
+<part name="SYMBOL24" library="APU_ENGR480_UPS_EAGLE_Library" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1988,9 +2071,9 @@ add power, status lights</text>
 <attribute name="NAME" x="115.57" y="20.32" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="115.57" y="17.78" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="27.94" y="10.16" smashed="yes">
-<attribute name="NAME" x="44.45" y="17.78" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="44.45" y="15.24" size="1.778" layer="96" align="center-left"/>
+<instance part="J2" gate="G$1" x="30.48" y="12.7" smashed="yes">
+<attribute name="NAME" x="46.99" y="20.32" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="46.99" y="17.78" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="U2" gate="G$1" x="154.94" y="187.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="128.27" y="180.34" size="1.778" layer="95" rot="R180" align="center-left"/>
@@ -2022,8 +2105,8 @@ add power, status lights</text>
 <instance part="SYMBOL2" gate="G$1" x="198.12" y="147.32" smashed="yes">
 <attribute name="VALUE" x="196.215" y="153.035" size="1.778" layer="96"/>
 </instance>
-<instance part="SYMBOL3" gate="G$1" x="127" y="15.24" smashed="yes">
-<attribute name="VALUE" x="125.095" y="20.955" size="1.778" layer="96"/>
+<instance part="SYMBOL3" gate="G$1" x="139.7" y="20.32" smashed="yes">
+<attribute name="VALUE" x="137.795" y="26.035" size="1.778" layer="96"/>
 </instance>
 <instance part="SYMBOL4" gate="G$1" x="111.76" y="73.66" smashed="yes">
 <attribute name="VALUE" x="109.855" y="67.945" size="1.778" layer="96"/>
@@ -2033,10 +2116,10 @@ add power, status lights</text>
 </instance>
 <instance part="J7" gate="G$1" x="50.8" y="60.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.58" y="21.59" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="68.58" y="96.52" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="71.12" y="96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SYMBOL6" gate="G$1" x="58.42" y="10.16" smashed="yes">
-<attribute name="VALUE" x="56.515" y="4.445" size="1.778" layer="96"/>
+<instance part="SYMBOL6" gate="G$1" x="60.96" y="10.16" smashed="yes" rot="R270">
+<attribute name="VALUE" x="55.245" y="12.065" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SYMBOL7" gate="G$1" x="17.78" y="10.16" smashed="yes">
 <attribute name="VALUE" x="15.875" y="4.445" size="1.778" layer="96"/>
@@ -2071,6 +2154,37 @@ add power, status lights</text>
 <instance part="SYMBOL15" gate="G$1" x="104.14" y="180.34" smashed="yes">
 <attribute name="VALUE" x="102.235" y="174.625" size="1.778" layer="96"/>
 </instance>
+<instance part="Y1" gate="G$1" x="190.5" y="193.04" smashed="yes">
+<attribute name="NAME" x="219.71" y="200.66" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="219.71" y="198.12" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="SYMBOL16" gate="G$1" x="68.58" y="139.7" smashed="yes" rot="R270">
+<attribute name="VALUE" x="74.295" y="141.605" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SYMBOL17" gate="G$1" x="73.66" y="132.08" smashed="yes" rot="R270">
+<attribute name="VALUE" x="79.375" y="133.985" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SYMBOL18" gate="G$1" x="73.66" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="79.375" y="89.535" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SYMBOL19" gate="G$1" x="30.48" y="137.16" smashed="yes" rot="R270">
+<attribute name="VALUE" x="24.765" y="139.065" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SYMBOL20" gate="G$1" x="68.58" y="114.3" smashed="yes" rot="R90">
+<attribute name="VALUE" x="74.295" y="112.395" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SYMBOL21" gate="G$1" x="68.58" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="74.295" y="120.015" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SYMBOL22" gate="G$1" x="71.12" y="124.46" smashed="yes" rot="R90">
+<attribute name="VALUE" x="76.835" y="122.555" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SYMBOL23" gate="G$1" x="73.66" y="119.38" smashed="yes" rot="R270">
+<attribute name="VALUE" x="79.375" y="121.285" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SYMBOL24" gate="G$1" x="76.2" y="116.84" smashed="yes" rot="R270">
+<attribute name="VALUE" x="81.915" y="118.745" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2085,22 +2199,37 @@ add power, status lights</text>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SPI_MOSI@19"/>
-<wire x1="109.22" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <label x="109.22" y="124.46" size="1.778" layer="95"/>
+<pinref part="U6" gate="G$1" pin="SI"/>
+<wire x1="33.02" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="124.46" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="147.32" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SPI_SCLK@23"/>
-<wire x1="109.22" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 <label x="109.22" y="114.3" size="1.778" layer="95"/>
+<pinref part="U6" gate="G$1" pin="SCK"/>
+<wire x1="33.02" y1="121.92" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="121.92" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="99.06" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SPI_MISO@21"/>
-<wire x1="109.22" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 <label x="109.22" y="119.38" size="1.778" layer="95"/>
+<pinref part="U6" gate="G$1" pin="SO"/>
+<wire x1="33.02" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="127" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="144.78" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="144.78" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -2179,6 +2308,26 @@ add power, status lights</text>
 <pinref part="SYMBOL13" gate="G$1" pin="3.3V"/>
 <wire x1="66.04" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDD"/>
+<pinref part="SYMBOL16" gate="G$1" pin="3.3V"/>
+<wire x1="66.04" y1="139.7" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDDOSC"/>
+<pinref part="SYMBOL17" gate="G$1" pin="3.3V"/>
+<wire x1="66.04" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDDPLL"/>
+<pinref part="SYMBOL23" gate="G$1" pin="3.3V"/>
+<wire x1="66.04" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDDRX"/>
+<pinref part="SYMBOL24" gate="G$1" pin="3.3V"/>
+<wire x1="66.04" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -2215,6 +2364,36 @@ add power, status lights</text>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="SYMBOL15" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="SHIELD"/>
+<pinref part="SYMBOL18" gate="G$1" pin="GND"/>
+<wire x1="71.12" y1="91.44" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SYMBOL19" gate="G$1" pin="GND"/>
+<pinref part="U6" gate="G$1" pin="VSS"/>
+<wire x1="30.48" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VSSOSC"/>
+<pinref part="SYMBOL22" gate="G$1" pin="GND"/>
+<wire x1="66.04" y1="124.46" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VSSPLL"/>
+<pinref part="SYMBOL21" gate="G$1" pin="GND"/>
+<wire x1="66.04" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VSSTX"/>
+<pinref part="SYMBOL20" gate="G$1" pin="GND"/>
+<wire x1="66.04" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SYMBOL6" gate="G$1" pin="GND"/>
+<pinref part="U7" gate="G$1" pin="COMMON_(GROUND)"/>
+<wire x1="60.96" y1="10.16" x2="63.5" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2272,6 +2451,40 @@ add power, status lights</text>
 <wire x1="101.6" y1="180.34" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="DOW@7"/>
 <wire x1="101.6" y1="154.94" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<wire x1="33.02" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="25.4" x2="7.62" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="TPIN+"/>
+<wire x1="7.62" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="33.02" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="TPIN-"/>
+<wire x1="10.16" y1="40.64" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="J7" gate="G$1" pin="TD-"/>
+<wire x1="71.12" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="40.64" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="TPOUT-"/>
+<wire x1="83.82" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="J7" gate="G$1" pin="TD+"/>
+<wire x1="71.12" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="25.4" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="TPOUT+"/>
+<wire x1="86.36" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
