@@ -771,7 +771,7 @@
 <wire x1="-4.8" y1="-0.1" x2="-4.8" y2="-0.1" width="0.1" layer="21"/>
 <wire x1="-4.8" y1="-0.1" x2="-4.7" y2="-0.1" width="0.1" layer="21" curve="180"/>
 </package>
-<<<<<<< HEAD
+<<<<<< HEAD
 <package name="OSTOQ045451">
 <description>&lt;b&gt;OSTOQ045451-1&lt;/b&gt;&lt;br&gt;
 </description>
